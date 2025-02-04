@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+ <div id="main">
+    <div id="head">
+        <h1>
+            WELCOME TO CALCULATE ME!
+        </h1>
+    </div>
+   <div id="largebox">
+    
+    <div id="box">
+        <input id="input" readonly>
+        <div class="boxes">
+            <button class="buttons"  onclick="clearDisplay()"><h1>AC</h1></button>
+            <button class="buttons" id="octal" onclick="octal()"><h1>0CT</h1></button>
+            <button class="buttons" id="binary" onclick="binary()"><h1>Bin</h1></button>
+            <button class="buttons" onclick="display('/')"><h1>/</h1></button>
+        </div>
+        <div class="boxes">
+            <button class="button" onclick="display('7')"><h1>7</h1></button>
+            <button class="button" onclick="display('8')"><h1>8</h1></button>
+            <button class="button" onclick="display('9')"><h1>9</h1></button>
+            <button class="buttons" onclick="display('*')"><h1>*</h1></button>
+        </div>
+        <div class="boxes">
+            <button class="button" onclick="display('4')"><h1>4</h1></button>
+            <button class="button" onclick="display('5')"><h1>5</h1></button>
+            <button class="button" onclick="display('6')"><h1>6</h1></button>
+            <button class="buttons" onclick="display('-')"><h1>-</h1></button>
+        </div>
+        <div class="boxes">
+            <button class="button" onclick="display('1')"><h1>1</h1></button>
+            <button class="button" onclick="display('2')"><h1>2</h1></button>
+            <button class="button" onclick="display('3')"><h1>3</h1></button>
+            <button class="buttons" onclick="display('+')"><h1>+</h1></button>
+        </div>
+        <div class="boxes">
+            <button class="button" onclick="display('0')"><h1>0</h1></button>
+            <button class="button" onclick="display('.')"><h1>.</h1></button>
+            <button class="button" onclick="display('100')"><h1>100</h1></button>
+            <button class="buttons" onclick="calculate()"><h1>=</h1></button>
+        </div>
+        
+        
+    </div>
+</div>
+ </div>   
+
+ <script src="script.js"></script>   
+</body>
+</html>
